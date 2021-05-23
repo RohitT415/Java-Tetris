@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.target=MyBoundedGrid
+comment0.text=\n\ MyBoundedGrid\ is\ the\ grid\ on\ which\ the\ game\ is\ played\ and\ on\ which\ the\ blocks\ exist.\n\ It\ is\ a\ rectangular\ grid\ with\ a\ finite\ number\ of\ rows\ and\ columns.\n\ \n\ @author\ \ Dave\ Feinberg\n\ @author\ \ Richard\ Page\n\ @author\ \ Susan\ King\n\ @author\ \ Rohit\ Tallapragada\n\ \n\ @version\ May\ 13,\ 2015\ \n\ @version\ January\ 1,\ 2021\n\ \n\ @param\ <E>\ the\ elements\ that\ may\ be\ put\ in\ the\ grid\ are\ any\ objects\n
+comment1.params=rows\ cols
+comment1.target=MyBoundedGrid(int,\ int)
+comment1.text=\n\ Constructs\ an\ empty\ MyBoundedGrid\ with\ the\ given\ dimensions.\n\ \n\ @param\ rows\ \ the\ grid's\ number\ of\ rows;\ \ rows\ >\ 0\ \n\ @param\ cols\ \ the\ grid's\ number\ of\ cols;\ \ cols\ >\ 0\n
+comment2.params=
+comment2.target=int\ getNumRows()
+comment2.text=\n\ Retrieves\ the\ number\ of\ rows.\n\ \n\ @return\ the\ grid's\ row\ count\n
+comment3.params=
+comment3.target=int\ getNumCols()
+comment3.text=\n\ Retrieves\ the\ number\ of\ columns.\n\ \n\ @return\ the\ grid's\ columns\ count\n
+comment4.params=loc
+comment4.target=boolean\ isValid(Location)
+comment4.text=\n\ Determines\ whether\ a\ location\ is\ valid.\n\ \n\ @param\ \ loc\ \ \ the\ location\ in\ quesion.\ \ loc\ \!\=\ null\n\ @return\ true\ \ if\ loc\ is\ valid\ in\ this\ grid;\ otherwise,\ \n\ \ \ \ \ \ \ \ \ false\ \n
+comment5.params=loc
+comment5.target=java.lang.Object\ get(Location)
+comment5.text=\n\ Retrieves\ an\ element\ from\ this\ grid\ at\ a\ location,\ or\n\ null\ if\ the\ location\ is\ unoccupied.\n\ \n\ @param\ loc\ is\ a\ valid\ location\ in\ this\ grid\n\ \n\ @return\ the\ object\ at\ location\ loc\ \n\ \ \ \ \ \ \ \ \ or\ null\ if\ the\ location\ is\ unoccupied\n
+comment6.params=loc\ obj
+comment6.target=java.lang.Object\ put(Location,\ java.lang.Object)
+comment6.text=\n\ Puts\ an\ element\ at\ location\ loc\ on\ this\ grid.\ \ Plus\n\ returns\ the\ object\ previously\ at\ that\ location,\ or\n\ null\ if\ the\ location\ is\ unoccupied.\n\ \n\ @param\ loc\ is\ a\ valid\ location\ in\ this\ grid\n\ @param\ obj\ \ the\ object\ to\ put\ at\ location\ loc\n\ \n\ @return\ the\ object\ at\ location\ loc\ \n\ \ \ \ \ \ \ \ \ or\ null\ if\ the\ location\ is\ unoccupied\n
+comment7.params=loc
+comment7.target=java.lang.Object\ remove(Location)
+comment7.text=\n\ Removes\ an\ element\ from\ this\ grid\ at\ a\ location.\ Plus\n\ returns\ the\ object\ previously\ at\ that\ location,\ or\n\ null\ if\ the\ location\ is\ unoccupied.\n\ \n\ @param\ loc\ is\ a\ valid\ location\ in\ this\ grid\n\ \n\ @return\ the\ object\ that\ was\ at\ location\ loc\ \n\ \ \ \ \ \ \ \ \ or\ null\ if\ the\ location\ is\ unoccupied\n
+comment8.params=
+comment8.target=java.util.ArrayList\ getOccupiedLocations()
+comment8.text=\n\ Returns\ all\ the\ occupied\ location\ in\ this\ grid.\n\ \n\ @return\ all\ the\ occupied\ locations\ in\ an\ array\ list;\ \n\ \ \ \ \ \ \ \ \ 0\ <\=\ list.size\ <\ getNumRows()\ *\ getNumCols()\n
+numComments=9
